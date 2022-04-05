@@ -1,8 +1,8 @@
-.vs
-.Binaries/
-.DerivedDataCache/
-.Intermediate/
-.Saved/
-.Build/
-.*sln
+PingPong/vs
+PingPong/Binaries/
+PingPong/DerivedDataCache/
+PingPong/Intermediate/
+PingPong/Saved/
+PingPong/Build/
+PingPong/*sln
 

@@ -13,5 +13,29 @@ UCLASS()
 class PINGPONG_API APingPongPlayerController : public APlayerController
 {
 	GENERATED_BODY()
+
+	protected:
 	
+    UPROPERTY()
+    FTransform StartTransform;
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+    TSubclassOf<class APingPongPlatform> PlatformClass;
+    UPROPERTY()
+    class APingPongPlatform* Platform;
+	
+    public:
+	
+    APingPongPlayerController();
+    UFUNCTION()
+    void SetStartTransfrorm(FTransform NewStartTransform);
+    UFUNCTION(Server, Reliable, WithValidation)
+    void Initialize();
+    UFUNCTION(Server, Reliable, WithValidation)
+    void SpawnPlatform(TSubclassOf<class APingPongPlatform> PlatfromClass);
+    virtual void SetupInputComponent() override;
+    protected:
+    UFUNCTION()
+    void MoveRight(float AxisValue);
+    UFUNCTION(Server, Reliable, WithValidation)
+    void Server_PlatformMoveRight(float AxisValue);
 };

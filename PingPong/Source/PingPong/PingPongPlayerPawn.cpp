@@ -2,33 +2,35 @@
 
 
 #include "PingPongPlayerPawn.h"
-
-// Sets default values
+#include "Camera/CameraComponent.h"
+#include "GameFramework/SpringArmComponent.h"
 APingPongPlayerPawn::APingPongPlayerPawn()
 {
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
+PrimaryActorTick.bCanEverTick = true;
+USceneComponent * root = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
+RootComponent = root;
+SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
+SpringArm->SetupAttachment(GetRootComponent());
+Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
+Camera->SetupAttachment(SpringArm);
+SetReplicates(true);
 }
-
 // Called when the game starts or when spawned
 void APingPongPlayerPawn::BeginPlay()
 {
-	Super::BeginPlay();
-	
+Super::BeginPlay();
 }
-
 // Called every frame
 void APingPongPlayerPawn::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
-
+Super::Tick(DeltaTime);
 }
-
 // Called to bind functionality to input
-void APingPongPlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void APingPongPlayerPawn::SetupPlayerInputComponent(UInputComponent*
+PlayerInputComponent)
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
+Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
+
+
 
