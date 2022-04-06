@@ -1,4 +1,5 @@
 #include "APingPongBall.h"
+#include "PingPongGoal.h"
 #include "DrawDebugHelpers.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
@@ -14,15 +15,21 @@ APingPongBall::APingPongBall()
 	BodyMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Ball Body Mesh"));
 	BodyMesh->SetupAttachment(RootComponent);
 	BodyMesh->SetIsReplicated(true);
-	BodyMesh->OnComponentBeginOverlap.AddDynamic(this, &APingPongBall::OnMeshOverlapBegin);
+	
 	
 	SetReplicates(true);
 	SetReplicateMovement(true);
 }
 // Called when the game starts or when spawned
 void APingPongBall::BeginPlay()
-{
-Super::BeginPlay();
+{	
+	Super::BeginPlay();
+
+	////////////////////////////// Lesson 4 //////////////////////////////////////////////
+	
+	StartingPosition = GetActorLocation();
+	
+	////////////////////////////// Lesson 4 //////////////////////////////////////////////
 }
 // Called every frame
 void APingPongBall::Tick(float DeltaTime)
@@ -37,15 +44,9 @@ Super::Tick(DeltaTime);
 	}
 }
 
-////////////////////////////// Lesson 4 //////////////////////////////////////////////
-void APingPongBall::OnMeshOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor*
-OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool
-bFromSweep, const FHitResult& SweepResult)
-{
-	
-	UE_LOG(LogTemp, Error, TEXT(" %s collided with %s. "), *GetName(),	*OtherActor->GetName());
-}
-////////////////////////////// Lesson 4 //////////////////////////////////////////////
+
+
+
 void APingPongBall::StartMove()
 {
 Server_StartMove();
@@ -66,15 +67,58 @@ return true;
 }
 void APingPongBall::Server_Move_Implementation(float DeltaTime)
 {
+
+	
 FVector forward = GetActorForwardVector();	
 FVector currLoc = GetActorLocation();
 FVector newLoc = currLoc + forward * MoveSpeed * DeltaTime;
 FHitResult hitResult;
 	coordinatZ = currLoc.Z;
 
-//	UE_LOG(LogTemp, Display, TEXT("APingPongBall::Server_Move_Implementation"));
+
 	
 if(!SetActorLocation(newLoc, true, &hitResult))
+
+	/////// Lesson 4 //////////////////
+	if (APingPongGoal * gate = Cast<APingPongGoal>(hitResult.Actor))
+	{
+		if (gate->id == 1)
+		{
+			
+
+			SetActorLocation(StartingPosition);
+			
+		// если попали в ворота 1, то очко получает ворота 2			
+		
+		  if (gate2)
+			{
+		  		GEngine->AddOnScreenDebugMessage(10, 1,FColor::Green, " GOAL!!!");
+				gate2->Score =gate2->Score + 1;
+			}
+			UE_LOG(LogTemp, Error, TEXT("Score %d : %d"), gate1->Score, gate2->Score);
+		
+		}
+		
+		else if(gate->id == 2)
+		{
+			
+
+			SetActorLocation(StartingPosition);
+
+			// если попали в ворота 2, то очко получает ворота 1
+			
+			if (gate1)
+			{
+				GEngine->AddOnScreenDebugMessage(10, 1,FColor::Red, " GOAL!!!");
+				gate1->Score =gate1->Score + 1;
+			}
+			UE_LOG(LogTemp, Error, TEXT("Score %d : %d"), gate1->Score, gate2->Score);
+			
+		}
+		
+	}
+	/////// Lesson 4 //////////////////
+	else
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Ball %s Collided with %s"), *GetName(),        *hitResult.GetActor()->GetName());
 	

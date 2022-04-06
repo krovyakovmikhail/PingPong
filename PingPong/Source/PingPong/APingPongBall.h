@@ -1,5 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "PingPongGoal.h"
 #include "Components/SphereComponent.h"
 #include "GameFramework/Actor.h"
 #include "APingPongBall.generated.h"
@@ -20,6 +21,18 @@ class PINGPONG_API APingPongBall : public AActor
 	UPROPERTY(Replicated)
 	bool IsMoving = true;
 	float coordinatZ;
+	
+	////////Lesson 4 /////
+	
+	FVector StartingPosition;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball params")
+	APingPongGoal * gate1;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball params")
+	APingPongGoal * gate2;
+	////////Lesson 4 /////
+	
+	
 	public:
 	// Sets default values for this actor's properties
 	APingPongBall();
