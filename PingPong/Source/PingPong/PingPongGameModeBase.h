@@ -27,13 +27,10 @@ class PINGPONG_API APingPongGameModeBase : public AGameModeBase
 	APlayerStart* Player2Start;
 
 	//////////////////// lesson 4 /////////////////////
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FString PlayerName;
+		
+	int32 ScoreGate1;
+	int32 ScoreGate2;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Goal params")
-	APingPongGoal * gate1;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Goal params")
-	APingPongGoal * gate2;
 	//////////////////// lesson 4 /////////////////////
 	public:
 	APingPongGameModeBase();

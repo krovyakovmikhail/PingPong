@@ -3,6 +3,8 @@
 
 #include "PingPongGoal.h"
 
+
+
 // Sets default values
 APingPongGoal::APingPongGoal()
 {
@@ -31,5 +33,15 @@ void APingPongGoal::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+int32 APingPongGoal::GetScore()
+{
+	return Score;
+}
+
+uint8 APingPongGoal::GetId()
+{
+	return  id;
 }
 

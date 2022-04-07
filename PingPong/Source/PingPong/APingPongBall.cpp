@@ -1,9 +1,15 @@
 #include "APingPongBall.h"
 #include "PingPongGoal.h"
 #include "DrawDebugHelpers.h"
+#include "PingPongGameModeBase.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Net/UnrealNetwork.h"
+
+
+
+
+
 // Sets default values
 APingPongBall::APingPongBall()
 {
@@ -28,6 +34,7 @@ void APingPongBall::BeginPlay()
 	////////////////////////////// Lesson 4 //////////////////////////////////////////////
 	
 	StartingPosition = GetActorLocation();
+
 	
 	////////////////////////////// Lesson 4 //////////////////////////////////////////////
 }
@@ -61,6 +68,9 @@ OutLifetimeProps) const
 Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 DOREPLIFETIME(APingPongBall, IsMoving);
 }
+
+
+
 bool APingPongBall::Server_Move_Validate(float DeltaTime)
 {
 return true;
@@ -84,38 +94,46 @@ if(!SetActorLocation(newLoc, true, &hitResult))
 	{
 		if (gate->id == 1)
 		{
-			
-
-			SetActorLocation(StartingPosition);
-			
+			SetActorLocation(StartingPosition);			
 		// если попали в ворота 1, то очко получает ворота 2			
 		
-		  if (gate2)
+		  if (Gate2)
 			{
 		  		GEngine->AddOnScreenDebugMessage(10, 1,FColor::Green, " GOAL!!!");
-				gate2->Score =gate2->Score + 1;
+				Gate2->Score =Gate2->Score + 1;
+
+		  		//Как только происходит изменение счета вызывается делегат, на который подписан эвент в виджете.
+		  		// передается Счет ворот и ИД 
+		  		OnChageScore.Broadcast(Gate2->Score, Gate2->id);
+		  	
 			}
-			UE_LOG(LogTemp, Error, TEXT("Score %d : %d"), gate1->Score, gate2->Score);
-		
+			UE_LOG(LogTemp, Error, TEXT("Score %d : %d"), Gate1->Score, Gate2->Score);
+			
 		}
 		
 		else if(gate->id == 2)
 		{
-			
-
 			SetActorLocation(StartingPosition);
-
 			// если попали в ворота 2, то очко получает ворота 1
 			
-			if (gate1)
+			if (Gate1)
 			{
 				GEngine->AddOnScreenDebugMessage(10, 1,FColor::Red, " GOAL!!!");
-				gate1->Score =gate1->Score + 1;
+				Gate1->Score =Gate1->Score + 1;
+
+				//Как только происходит изменение счета вызывается делегат, на который подписан эвент в виджете.
+				// передается Счет ворот и ИД 
+				OnChageScore.Broadcast(Gate1->Score, Gate1->id);
 			}
-			UE_LOG(LogTemp, Error, TEXT("Score %d : %d"), gate1->Score, gate2->Score);
+			UE_LOG(LogTemp, Error, TEXT("Score %d : %d"), Gate1->Score, Gate2->Score);
 			
 		}
-		
+
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(10, 1,FColor::Yellow, " Cast Filed");
+			
+		}
 	}
 	/////// Lesson 4 //////////////////
 	else

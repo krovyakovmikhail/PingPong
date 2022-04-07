@@ -20,10 +20,18 @@ class PINGPONG_API APingPongGoal : public AActor
 
 	public:
 	//////////// lesson 4 ///////////////////
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball params")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ID")
 	uint8 id = 0;
 	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SCORE")
 	int32 Score = 0;
+
+	UFUNCTION(BlueprintCallable)
+		int32 GetScore();
+	
+	UFUNCTION(BlueprintCallable)
+		uint8 GetId();
+	
 	//////////// lesson 4 ///////////////////
 public:	
 	// Sets default values for this actor's properties
@@ -37,4 +45,5 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	
 };

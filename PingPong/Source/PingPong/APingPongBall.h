@@ -4,6 +4,10 @@
 #include "Components/SphereComponent.h"
 #include "GameFramework/Actor.h"
 #include "APingPongBall.generated.h"
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnChageScore, int32, Score, int32, GateId);
+
+
 UCLASS()
 class PINGPONG_API APingPongBall : public AActor
 {
@@ -27,15 +31,22 @@ class PINGPONG_API APingPongBall : public AActor
 	FVector StartingPosition;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball params")
-	APingPongGoal * gate1;
+	APingPongGoal * Gate1;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball params")
-	APingPongGoal * gate2;
+	APingPongGoal * Gate2;
+
+
+	public:
+	UPROPERTY(BlueprintAssignable)
+	FOnChageScore OnChageScore;
 	////////Lesson 4 /////
+	
 	
 	
 	public:
 	// Sets default values for this actor's properties
 	APingPongBall();
+	
 	protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -47,15 +58,16 @@ class PINGPONG_API APingPongBall : public AActor
 	void Server_StopMove();
 	UFUNCTION(NetMulticast, Unreliable)
 	void Multicast_HitEffect();
+	
 	public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	UFUNCTION(BlueprintCallable)
 	void StartMove();
+	
 	UFUNCTION(BlueprintCallable)
 	void StopMove();
+	
 	virtual void GetLifetimeReplicatedProps(TArray< class FLifetimeProperty > &	OutLifetimeProps) const;
-	void OnMeshOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor*
-OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool
-bFromSweep, const FHitResult& SweepResult);
+	
 };
