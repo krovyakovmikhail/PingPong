@@ -7109,3 +7109,409 @@ Script call stack:
 [2022.04.07-06.48.56:807][362]LogSavePackage: Moving '../../../../../../Users/Misha/UnrealProject/PingPong/PingPong/Saved/BP_PingPongBall9BE31FD84DBBA7E56E3547B8162D718B.tmp' to '../../../../../../Users/Misha/UnrealProject/PingPong/PingPong/Content/Blueprints/PingPong/BP_PingPongBall.uasset'
 [2022.04.07-06.48.56:829][362]AssetCheck: New page: Asset Save: BP_PingPongBall
 [2022.04.07-06.48.56:829][362]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/PingPong/BP_PingPongBall.BP_PingPongBall
+[2022.04.07-06.50.48:132][622]LogActor: Warning: SetReplicates called on non-initialized actor Default__SKEL_BP_PingPongPlayerPawn_C. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.52:791][862]LogActor: Warning: SetReplicates called on non-initialized actor Default__SKEL_BP_PingPongPlayerPawn_C. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.53:968][920]BlueprintLog: New page: Compile BP_PingPongPlayerPawn
+[2022.04.07-06.50.53:970][920]LogActor: Warning: SetReplicates called on non-initialized actor Default__SKEL_BP_PingPongBall_C. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.53:970][920]LogActor: Warning: SetReplicates called on non-initialized actor Default__SKEL_BP_PingPongPlayerPawn_C. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.53:977][920]LogActor: Warning: SetReplicates called on non-initialized actor Default__BP_PingPongPlayerPawn_C. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.53:980][920]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerPawn_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.54:066][920]LogUObjectHash: Compacting FUObjectHashTables data took   7.43ms
+[2022.04.07-06.50.54:758][945]LogSavePackage: Moving '../../../../../../Users/Misha/UnrealProject/PingPong/PingPong/Saved/BP_PingPongPlayerPawnD1D88D014DCB8EA128ABE0B62B6B85D4.tmp' to '../../../../../../Users/Misha/UnrealProject/PingPong/PingPong/Content/Blueprints/PingPong/BP_PingPongPlayerPawn.uasset'
+[2022.04.07-06.50.54:783][945]AssetCheck: New page: Asset Save: BP_PingPongPlayerPawn
+[2022.04.07-06.50.54:783][945]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/PingPong/BP_PingPongPlayerPawn.BP_PingPongPlayerPawn
+[2022.04.07-06.50.57:653][ 97]LogTemp: Repeating last play command: Selected Viewport
+[2022.04.07-06.50.57:662][ 97]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.04.07-06.50.57:662][ 97]PIE: New page: PIE session: TestLevel (7 апр. 2022 г., 12:50:57)
+[2022.04.07-06.50.57:662][ 97]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestLevel
+[2022.04.07-06.50.57:663][ 97]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongGoal2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.57:663][ 97]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongGoal_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.57:663][ 97]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongBall_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.57:665][ 97]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002306s)
+[2022.04.07-06.50.57:666][ 97]LogAIModule: Creating AISystem for world TestLevel
+[2022.04.07-06.50.57:666][ 97]LogPlayLevel: PIE: World Init took: (0.001311s)
+[2022.04.07-06.50.57:666][ 97]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestLevel.TestLevel to /Game/Maps/UEDPIE_0_TestLevel.TestLevel (0.003749s)
+[2022.04.07-06.50.57:720][ 97]LogUObjectHash: Compacting FUObjectHashTables data took   5.82ms
+[2022.04.07-06.50.57:721][ 97]LogAudio: Display: Creating Audio Device:                 Id: 26, Scope: Unique, Realtime: True
+[2022.04.07-06.50.57:721][ 97]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.04.07-06.50.57:722][ 97]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.04.07-06.50.57:722][ 97]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.04.07-06.50.57:722][ 97]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.04.07-06.50.57:722][ 97]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.04.07-06.50.57:722][ 97]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.04.07-06.50.57:722][ 97]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.04.07-06.50.57:722][ 97]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.04.07-06.50.57:722][ 97]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.04.07-06.50.57:722][ 97]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.04.07-06.50.57:722][ 97]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.04.07-06.50.57:722][ 97]LogAudioMixer: Display: Initializing audio mixer.
+[2022.04.07-06.50.57:725][ 97]LogAudioMixer: Display: 0: FrontLeft
+[2022.04.07-06.50.57:725][ 97]LogAudioMixer: Display: 1: FrontRight
+[2022.04.07-06.50.57:774][ 97]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2022.04.07-06.50.57:774][ 97]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.04.07-06.50.57:774][ 97]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.04.07-06.50.57:774][ 97]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.04.07-06.50.57:775][ 97]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.04.07-06.50.57:775][ 97]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.04.07-06.50.57:775][ 97]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.04.07-06.50.57:776][ 97]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.04.07-06.50.57:776][ 97]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.04.07-06.50.57:776][ 97]LogInit: FAudioDevice initialized.
+[2022.04.07-06.50.57:776][ 97]LogAudio: Display: Audio Device (ID: 26) registered with world 'TestLevel'.
+[2022.04.07-06.50.57:786][ 97]LogLoad: Game class is 'BP_PingPongGameModeBase_C'
+[2022.04.07-06.50.57:788][ 97]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 60) at 2022.04.07-09.50.57
+[2022.04.07-06.50.57:788][ 97]LogWorld: Bringing up level for play took: 0.000881
+[2022.04.07-06.50.57:789][ 97]LogOnline: OSS: Creating online subsystem instance for: :Context_39
+[2022.04.07-06.50.57:791][ 97]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerController_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.57:791][ 97]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerPawn_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.57:792][ 97]LogTemp: Warning: PingPongGameMode: Init player 1
+[2022.04.07-06.50.57:792][ 97]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlatform_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.57:792][ 97]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2022.04.07-06.50.57:792][ 97]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2022.04.07-06.50.57:792][ 97]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2022.04.07-06.50.57:792][ 97]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2022.04.07-06.50.57:792][ 97]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.04.07-06.50.57:792][ 97]LogNet: GameNetDriver IpNetDriver_24 IpNetDriver listening on port 17777
+[2022.04.07-06.50.57:793][ 97]PIE: Server logged in
+[2022.04.07-06.50.57:794][ 97]PIE: Play in editor total start time 0,132 seconds.
+[2022.04.07-06.50.57:795][ 97]LogAudio: Display: Creating Audio Device:                 Id: 27, Scope: Unique, Realtime: True
+[2022.04.07-06.50.57:796][ 97]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.04.07-06.50.57:796][ 97]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.04.07-06.50.57:796][ 97]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.04.07-06.50.57:796][ 97]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.04.07-06.50.57:796][ 97]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.04.07-06.50.57:796][ 97]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.04.07-06.50.57:796][ 97]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.04.07-06.50.57:796][ 97]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.04.07-06.50.57:796][ 97]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.04.07-06.50.57:796][ 97]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.04.07-06.50.57:796][ 97]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.04.07-06.50.57:796][ 97]LogAudioMixer: Display: Initializing audio mixer.
+[2022.04.07-06.50.57:798][ 97]LogAudioMixer: Display: 0: FrontLeft
+[2022.04.07-06.50.57:798][ 97]LogAudioMixer: Display: 1: FrontRight
+[2022.04.07-06.50.57:849][ 97]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2022.04.07-06.50.57:849][ 97]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.04.07-06.50.57:849][ 97]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.04.07-06.50.57:850][ 97]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.04.07-06.50.57:850][ 97]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.04.07-06.50.57:850][ 97]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.04.07-06.50.57:850][ 97]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.04.07-06.50.57:851][ 97]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.04.07-06.50.57:851][ 97]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.04.07-06.50.57:851][ 97]LogInit: FAudioDevice initialized.
+[2022.04.07-06.50.57:851][ 97]LogAudio: Display: Audio Device (ID: 27) registered with world 'Untitled'.
+[2022.04.07-06.50.57:884][ 97]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.07-06.50.57:884][ 97]LogNet: Browse: 127.0.0.1:17777/Game/Maps/TestLevel
+[2022.04.07-06.50.57:885][ 97]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2022.04.07-06.50.57:885][ 97]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2022.04.07-06.50.57:885][ 97]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.04.07-06.50.57:885][ 97]LogNet: Game client on port 17777, rate 100000
+[2022.04.07-06.50.57:889][ 97]PIE: Client logged in
+[2022.04.07-06.50.57:895][ 97]PIE: Play in editor total start time 0,234 seconds.
+[2022.04.07-06.50.58:910][148]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49893
+[2022.04.07-06.50.58:910][148]LogHandshake: SendConnectChallenge. Timestamp: 1.273507, Cookie: 161083104156023114208222112201172117022254016253237231049222
+[2022.04.07-06.50.58:911][148]LogHandshake: SendChallengeResponse. Timestamp: 1.273507, Cookie: 161083104156023114208222112201172117022254016253237231049222
+[2022.04.07-06.50.58:927][149]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49893
+[2022.04.07-06.50.58:927][149]LogHandshake: SendChallengeAck. InCookie: 161083104156023114208222112201172117022254016253237231049222
+[2022.04.07-06.50.58:927][149]LogNet: Server accepting post-challenge connection from: 127.0.0.1:49893
+[2022.04.07-06.50.58:927][149]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.04.07-06.50.58:927][149]LogNet: NotifyAcceptedConnection: Name: TestLevel, TimeStamp: 04/07/22 09:50:58, [UNetConnection] RemoteAddr: 127.0.0.1:49893, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_24, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.04.07-06.50.58:927][149]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:49893, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_24, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.04.07-06.50.58:928][149]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_24, Driver: PendingNetDriver IpNetDriver_25, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.04.07-06.50.58:944][150]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_0_TestLevel.TestLevel: Accepted
+[2022.04.07-06.50.58:944][150]LogNet: Remote platform little endian=1
+[2022.04.07-06.50.58:944][150]LogNet: This platform little endian=1
+[2022.04.07-06.50.58:946][150]LogOnline: OSS: Creating online subsystem instance for: :Context_40
+[2022.04.07-06.50.58:961][151]LogNet: Login request: ?Name=LAPTOP-89S6SAPI-2BD72A37466E5E67A37875ACB8714D13 userId: NULL:LAPTOP-89S6SAPI-2BD72A37466E5E67A37875ACB8714D13 platform: NULL
+[2022.04.07-06.50.58:962][151]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_0_TestLevel, Game: /Game/Blueprints/PingPong/BP_PingPongGameModeBase.BP_PingPongGameModeBase_C)
+[2022.04.07-06.50.58:963][151]LogLoad: LoadMap: 127.0.0.1:17777/Game/Maps/UEDPIE_0_TestLevel?game=/Game/Blueprints/PingPong/BP_PingPongGameModeBase.BP_PingPongGameModeBase_C
+[2022.04.07-06.50.58:963][151]LogWorld: BeginTearingDown for /Temp/Untitled_13
+[2022.04.07-06.50.58:963][151]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.04.07-06.50.58:963][151]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.07-06.50.59:009][151]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.07-06.50.59:014][151]LogUObjectHash: Compacting FUObjectHashTables data took   3.98ms
+[2022.04.07-06.50.59:015][151]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongGoal2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.59:015][151]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongGoal_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.59:015][151]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongBall_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.59:016][151]LogAudio: Display: Audio Device (ID: 27) registered with world 'TestLevel'.
+[2022.04.07-06.50.59:017][151]LogAIModule: Creating AISystem for world TestLevel
+[2022.04.07-06.50.59:019][151]LogWorld: Bringing World /Game/Maps/UEDPIE_1_TestLevel.TestLevel up for play (max tick rate 60) at 2022.04.07-09.50.59
+[2022.04.07-06.50.59:019][151]LogWorld: Bringing up level for play took: 0.000471
+[2022.04.07-06.50.59:019][151]LogLoad: Took 0.057361 seconds to LoadMap(/Game/Maps/UEDPIE_0_TestLevel)
+[2022.04.07-06.50.59:055][152]LogNet: Client netspeed is 100000
+[2022.04.07-06.50.59:055][152]LogNet: Join request: /Game/Maps/TestLevel?Name=LAPTOP-89S6SAPI-2BD72A37466E5E67A37875ACB8714D13?SplitscreenCount=1
+[2022.04.07-06.50.59:055][152]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerController_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.59:055][152]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2022.04.07-06.50.59:056][152]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerPawn_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.59:056][152]LogTemp: Warning: PingPongGameMode: Init player 2
+[2022.04.07-06.50.59:057][152]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlatform_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.59:057][152]LogNet: Join succeeded: LAPTOP-89S6SAPI-2BD7
+[2022.04.07-06.50.59:058][152]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerController_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.59:073][153]LogNetPackageMap: Warning: FNetGUIDCache::SupportsObject: WBP_Score_C /Engine/Transient.UnrealEdEngine_0:GameInstance_24.WBP_Score_C_1 NOT Supported.
+[2022.04.07-06.50.59:073][153]LogNetPackageMap: Warning: FNetGUIDCache::SupportsObject: WBP_Score_C /Engine/Transient.UnrealEdEngine_0:GameInstance_24.WBP_Score_C_0 NOT Supported.
+[2022.04.07-06.50.59:074][153]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerPawn_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.59:074][153]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerPawn_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.59:075][153]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlatform_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.59:076][153]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2022.04.07-06.50.59:091][154]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlatform_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.50.59:092][154]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2022.04.07-06.50.59:707][191]LogTemp: Warning: Ball BP_PingPongBall_2 Collided with Cube2_5
+[2022.04.07-06.51.01:541][301]LogTemp: Warning: Ball BP_PingPongBall_2 Collided with Cube2_5
+[2022.04.07-06.51.02:758][374]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.02:758][374]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.02:758][374]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.02:774][375]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.02:775][375]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.02:775][375]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.02:791][376]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.02:791][376]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.02:791][376]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.02:808][377]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.02:809][377]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.02:809][377]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.02:825][378]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.02:825][378]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.02:825][378]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.02:841][379]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.02:841][379]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.02:841][379]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.02:859][380]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.02:859][380]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.02:859][380]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.02:875][381]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.02:875][381]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.02:875][381]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.02:892][382]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.02:892][382]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.02:892][382]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.02:908][383]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.02:908][383]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.02:908][383]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.03:459][416]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.03:459][416]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.03:459][416]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.03:475][417]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.03:475][417]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.03:475][417]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.03:492][418]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.03:492][418]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.03:492][418]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.03:508][419]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.03:509][419]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.03:509][419]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.03:524][420]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.03:524][420]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.03:524][420]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.03:541][421]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.03:541][421]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.03:541][421]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.03:558][422]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.03:558][422]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.03:558][422]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.03:575][423]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.03:575][423]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.03:575][423]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.03:592][424]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.51.03:592][424]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.51.03:592][424]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.51.03:942][445]LogTemp: Error: Score 1 : 0
+[2022.04.07-06.51.05:958][566]LogTemp: Warning: Ball BP_PingPongBall_2 Collided with Cube3
+[2022.04.07-06.51.08:825][738]LogTemp: Error: Score 1 : 1
+[2022.04.07-06.51.10:061][810]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.07-06.51.10:061][810]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_1_TestLevel
+[2022.04.07-06.51.10:062][810]LogSlate: Window 'PingPong Preview [NetMode: Client 1]  (64-bit/Windows) ' being destroyed
+[2022.04.07-06.51.10:069][810]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2022.04.07-06.51.10:070][810]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.07-06.51.10:079][810]LogNet: World NetDriver shutdown IpNetDriver_25 [GameNetDriver]
+[2022.04.07-06.51.10:079][810]LogNet: DestroyNamedNetDriver IpNetDriver_25 [GameNetDriver]
+[2022.04.07-06.51.10:080][810]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_24, Driver: GameNetDriver IpNetDriver_25, IsServer: NO, PC: BP_PingPongPlayerController_C_0, Owner: BP_PingPongPlayerController_C_0, UniqueId: NULL:LAPTOP-89S6SAPI-2BD72A37466E5E67A37875ACB8714D13, Channels: 15, Time: 2022.04.07-06.51.10
+[2022.04.07-06.51.10:080][810]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_24, Driver: GameNetDriver IpNetDriver_25, IsServer: NO, PC: BP_PingPongPlayerController_C_0, Owner: BP_PingPongPlayerController_C_0, UniqueId: NULL:LAPTOP-89S6SAPI-2BD72A37466E5E67A37875ACB8714D13
+[2022.04.07-06.51.10:080][810]LogExit: GameNetDriver IpNetDriver_25 shut down
+[2022.04.07-06.51.10:082][810]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_TestLevel
+[2022.04.07-06.51.10:082][810]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2022.04.07-06.51.10:083][810]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.07-06.51.10:083][810]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2022.04.07-06.51.10:083][810]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.07-06.51.10:092][810]LogNet: World NetDriver shutdown IpNetDriver_24 [GameNetDriver]
+[2022.04.07-06.51.10:092][810]LogNet: DestroyNamedNetDriver IpNetDriver_24 [GameNetDriver]
+[2022.04.07-06.51.10:092][810]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:49893, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_24, IsServer: YES, PC: BP_PingPongPlayerController_C_1, Owner: BP_PingPongPlayerController_C_1, UniqueId: NULL:LAPTOP-89S6SAPI-2BD72A37466E5E67A37875ACB8714D13
+[2022.04.07-06.51.10:092][810]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:49893, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_24, IsServer: YES, PC: BP_PingPongPlayerController_C_1, Owner: BP_PingPongPlayerController_C_1, UniqueId: NULL:LAPTOP-89S6SAPI-2BD72A37466E5E67A37875ACB8714D13, Channels: 15, Time: 2022.04.07-06.51.10
+[2022.04.07-06.51.10:092][810]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:49893, Name: IpConnection_25, Driver: GameNetDriver IpNetDriver_24, IsServer: YES, PC: BP_PingPongPlayerController_C_1, Owner: BP_PingPongPlayerController_C_1, UniqueId: NULL:LAPTOP-89S6SAPI-2BD72A37466E5E67A37875ACB8714D13
+[2022.04.07-06.51.10:092][810]LogExit: GameNetDriver IpNetDriver_24 shut down
+[2022.04.07-06.51.10:093][810]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.04.07-06.51.10:101][810]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.07-06.51.10:157][810]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.07-06.51.10:159][810]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.07-06.51.10:163][810]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.07-06.51.10:163][810]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.07-06.51.10:166][810]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.07-06.51.10:170][810]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.07-06.51.10:177][810]LogUObjectHash: Compacting FUObjectHashTables data took   4.71ms
+[2022.04.07-06.51.10:209][811]LogPlayLevel: Display: Destroying online subsystem :Context_40
+[2022.04.07-06.51.10:209][811]LogPlayLevel: Display: Destroying online subsystem :Context_39
+[2022.04.07-06.51.11:276][874]LogTemp: Repeating last play command: Selected Viewport
+[2022.04.07-06.51.11:283][874]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.04.07-06.51.11:283][874]PIE: New page: PIE session: TestLevel (7 апр. 2022 г., 12:51:11)
+[2022.04.07-06.51.11:283][874]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestLevel
+[2022.04.07-06.51.11:284][874]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongGoal2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.11:284][874]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongGoal_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.11:284][874]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongBall_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.11:286][874]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002253s)
+[2022.04.07-06.51.11:287][874]LogAIModule: Creating AISystem for world TestLevel
+[2022.04.07-06.51.11:287][874]LogPlayLevel: PIE: World Init took: (0.001234s)
+[2022.04.07-06.51.11:287][874]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestLevel.TestLevel to /Game/Maps/UEDPIE_0_TestLevel.TestLevel (0.003618s)
+[2022.04.07-06.51.11:340][874]LogUObjectHash: Compacting FUObjectHashTables data took   4.80ms
+[2022.04.07-06.51.11:341][874]LogAudio: Display: Creating Audio Device:                 Id: 28, Scope: Unique, Realtime: True
+[2022.04.07-06.51.11:341][874]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.04.07-06.51.11:341][874]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.04.07-06.51.11:341][874]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.04.07-06.51.11:341][874]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.04.07-06.51.11:341][874]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.04.07-06.51.11:341][874]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.04.07-06.51.11:341][874]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.04.07-06.51.11:341][874]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.04.07-06.51.11:343][874]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.04.07-06.51.11:343][874]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.04.07-06.51.11:343][874]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.04.07-06.51.11:343][874]LogAudioMixer: Display: Initializing audio mixer.
+[2022.04.07-06.51.11:346][874]LogAudioMixer: Display: 0: FrontLeft
+[2022.04.07-06.51.11:346][874]LogAudioMixer: Display: 1: FrontRight
+[2022.04.07-06.51.11:402][874]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2022.04.07-06.51.11:402][874]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.04.07-06.51.11:402][874]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.04.07-06.51.11:402][874]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.04.07-06.51.11:402][874]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.04.07-06.51.11:402][874]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.04.07-06.51.11:402][874]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.04.07-06.51.11:404][874]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.04.07-06.51.11:404][874]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.04.07-06.51.11:404][874]LogInit: FAudioDevice initialized.
+[2022.04.07-06.51.11:404][874]LogAudio: Display: Audio Device (ID: 28) registered with world 'TestLevel'.
+[2022.04.07-06.51.11:413][874]LogLoad: Game class is 'BP_PingPongGameModeBase_C'
+[2022.04.07-06.51.11:415][874]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 60) at 2022.04.07-09.51.11
+[2022.04.07-06.51.11:415][874]LogWorld: Bringing up level for play took: 0.000868
+[2022.04.07-06.51.11:415][874]LogOnline: OSS: Creating online subsystem instance for: :Context_41
+[2022.04.07-06.51.11:417][874]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerController_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.11:418][874]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerPawn_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.11:418][874]LogTemp: Warning: PingPongGameMode: Init player 1
+[2022.04.07-06.51.11:418][874]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlatform_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.11:418][874]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2022.04.07-06.51.11:418][874]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2022.04.07-06.51.11:418][874]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2022.04.07-06.51.11:419][874]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2022.04.07-06.51.11:419][874]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.04.07-06.51.11:419][874]LogNet: GameNetDriver IpNetDriver_26 IpNetDriver listening on port 17777
+[2022.04.07-06.51.11:419][874]PIE: Server logged in
+[2022.04.07-06.51.11:420][874]PIE: Play in editor total start time 0,138 seconds.
+[2022.04.07-06.51.11:422][874]LogAudio: Display: Creating Audio Device:                 Id: 29, Scope: Unique, Realtime: True
+[2022.04.07-06.51.11:422][874]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.04.07-06.51.11:422][874]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.04.07-06.51.11:422][874]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.04.07-06.51.11:422][874]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.04.07-06.51.11:422][874]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.04.07-06.51.11:422][874]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.04.07-06.51.11:422][874]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.04.07-06.51.11:422][874]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.04.07-06.51.11:422][874]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.04.07-06.51.11:422][874]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.04.07-06.51.11:422][874]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.04.07-06.51.11:422][874]LogAudioMixer: Display: Initializing audio mixer.
+[2022.04.07-06.51.11:424][874]LogAudioMixer: Display: 0: FrontLeft
+[2022.04.07-06.51.11:424][874]LogAudioMixer: Display: 1: FrontRight
+[2022.04.07-06.51.11:473][874]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2022.04.07-06.51.11:473][874]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.04.07-06.51.11:473][874]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.04.07-06.51.11:473][874]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.04.07-06.51.11:474][874]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.04.07-06.51.11:474][874]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.04.07-06.51.11:474][874]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.04.07-06.51.11:475][874]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.04.07-06.51.11:475][874]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.04.07-06.51.11:475][874]LogInit: FAudioDevice initialized.
+[2022.04.07-06.51.11:475][874]LogAudio: Display: Audio Device (ID: 29) registered with world 'Untitled'.
+[2022.04.07-06.51.11:528][874]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.07-06.51.11:529][874]LogNet: Browse: 127.0.0.1:17777/Game/Maps/TestLevel
+[2022.04.07-06.51.11:529][874]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2022.04.07-06.51.11:529][874]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2022.04.07-06.51.11:529][874]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.04.07-06.51.11:529][874]LogNet: Game client on port 17777, rate 100000
+[2022.04.07-06.51.11:533][874]PIE: Client logged in
+[2022.04.07-06.51.11:539][874]PIE: Play in editor total start time 0,257 seconds.
+[2022.04.07-06.51.12:560][927]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49894
+[2022.04.07-06.51.12:560][927]LogHandshake: SendConnectChallenge. Timestamp: 1.217206, Cookie: 235105125172093121007182172180142178136142058017067197041144
+[2022.04.07-06.51.12:561][927]LogHandshake: SendChallengeResponse. Timestamp: 1.217206, Cookie: 235105125172093121007182172180142178136142058017067197041144
+[2022.04.07-06.51.12:576][928]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:49894
+[2022.04.07-06.51.12:576][928]LogHandshake: SendChallengeAck. InCookie: 235105125172093121007182172180142178136142058017067197041144
+[2022.04.07-06.51.12:576][928]LogNet: Server accepting post-challenge connection from: 127.0.0.1:49894
+[2022.04.07-06.51.12:578][928]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.04.07-06.51.12:578][928]LogNet: NotifyAcceptedConnection: Name: TestLevel, TimeStamp: 04/07/22 09:51:12, [UNetConnection] RemoteAddr: 127.0.0.1:49894, Name: IpConnection_27, Driver: GameNetDriver IpNetDriver_26, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.04.07-06.51.12:579][928]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:49894, Name: IpConnection_27, Driver: GameNetDriver IpNetDriver_26, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.04.07-06.51.12:579][928]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_26, Driver: PendingNetDriver IpNetDriver_27, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.04.07-06.51.12:594][929]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_0_TestLevel.TestLevel: Accepted
+[2022.04.07-06.51.12:594][929]LogNet: Remote platform little endian=1
+[2022.04.07-06.51.12:594][929]LogNet: This platform little endian=1
+[2022.04.07-06.51.12:596][929]LogOnline: OSS: Creating online subsystem instance for: :Context_42
+[2022.04.07-06.51.12:611][930]LogNet: Login request: ?Name=LAPTOP-89S6SAPI-2B547BE147E7DA6C452F648303178748 userId: NULL:LAPTOP-89S6SAPI-2B547BE147E7DA6C452F648303178748 platform: NULL
+[2022.04.07-06.51.12:612][930]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_0_TestLevel, Game: /Game/Blueprints/PingPong/BP_PingPongGameModeBase.BP_PingPongGameModeBase_C)
+[2022.04.07-06.51.12:612][930]LogLoad: LoadMap: 127.0.0.1:17777/Game/Maps/UEDPIE_0_TestLevel?game=/Game/Blueprints/PingPong/BP_PingPongGameModeBase.BP_PingPongGameModeBase_C
+[2022.04.07-06.51.12:612][930]LogWorld: BeginTearingDown for /Temp/Untitled_14
+[2022.04.07-06.51.12:612][930]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.04.07-06.51.12:612][930]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.07-06.51.12:709][930]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.07-06.51.12:715][930]LogUObjectHash: Compacting FUObjectHashTables data took   5.35ms
+[2022.04.07-06.51.12:716][930]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongGoal2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.12:717][930]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongGoal_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.12:717][930]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongBall_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.12:719][930]LogAudio: Display: Audio Device (ID: 29) registered with world 'TestLevel'.
+[2022.04.07-06.51.12:720][930]LogAIModule: Creating AISystem for world TestLevel
+[2022.04.07-06.51.12:722][930]LogWorld: Bringing World /Game/Maps/UEDPIE_1_TestLevel.TestLevel up for play (max tick rate 60) at 2022.04.07-09.51.12
+[2022.04.07-06.51.12:722][930]LogWorld: Bringing up level for play took: 0.000757
+[2022.04.07-06.51.12:723][930]LogLoad: Took 0.110489 seconds to LoadMap(/Game/Maps/UEDPIE_0_TestLevel)
+[2022.04.07-06.51.12:728][931]LogNet: Client netspeed is 100000
+[2022.04.07-06.51.12:728][931]LogNet: Join request: /Game/Maps/TestLevel?Name=LAPTOP-89S6SAPI-2B547BE147E7DA6C452F648303178748?SplitscreenCount=1
+[2022.04.07-06.51.12:728][931]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerController_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.12:729][931]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2022.04.07-06.51.12:729][931]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerPawn_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.12:730][931]LogTemp: Warning: PingPongGameMode: Init player 2
+[2022.04.07-06.51.12:730][931]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlatform_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.12:730][931]LogNet: Join succeeded: LAPTOP-89S6SAPI-2B54
+[2022.04.07-06.51.12:732][931]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerController_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.12:760][932]LogNetPackageMap: Warning: FNetGUIDCache::SupportsObject: WBP_Score_C /Engine/Transient.UnrealEdEngine_0:GameInstance_26.WBP_Score_C_1 NOT Supported.
+[2022.04.07-06.51.12:760][932]LogNetPackageMap: Warning: FNetGUIDCache::SupportsObject: WBP_Score_C /Engine/Transient.UnrealEdEngine_0:GameInstance_26.WBP_Score_C_0 NOT Supported.
+[2022.04.07-06.51.12:762][932]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerPawn_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.12:762][932]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerPawn_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.12:762][932]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlatform_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.12:763][932]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2022.04.07-06.51.12:778][933]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlatform_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.51.12:778][933]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2022.04.07-06.51.13:397][970]LogTemp: Warning: Ball BP_PingPongBall_2 Collided with Cube2_5
+[2022.04.07-06.51.15:013][ 67]LogSlate: Window 'PingPong Preview [NetMode: Client 1]  (64-bit/Windows) ' being destroyed
+[2022.04.07-06.51.15:029][ 67]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_1_TestLevel
+[2022.04.07-06.51.15:029][ 67]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2022.04.07-06.51.15:030][ 67]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.07-06.51.15:049][ 67]LogNet: World NetDriver shutdown IpNetDriver_27 [GameNetDriver]
+[2022.04.07-06.51.15:050][ 67]LogNet: DestroyNamedNetDriver IpNetDriver_27 [GameNetDriver]
+[2022.04.07-06.51.15:050][ 67]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_26, Driver: GameNetDriver IpNetDriver_27, IsServer: NO, PC: BP_PingPongPlayerController_C_0, Owner: BP_PingPongPlayerController_C_0, UniqueId: NULL:LAPTOP-89S6SAPI-2B547BE147E7DA6C452F648303178748, Channels: 14, Time: 2022.04.07-06.51.15
+[2022.04.07-06.51.15:050][ 67]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_26, Driver: GameNetDriver IpNetDriver_27, IsServer: NO, PC: BP_PingPongPlayerController_C_0, Owner: BP_PingPongPlayerController_C_0, UniqueId: NULL:LAPTOP-89S6SAPI-2B547BE147E7DA6C452F648303178748
+[2022.04.07-06.51.15:051][ 67]LogExit: GameNetDriver IpNetDriver_27 shut down
+[2022.04.07-06.51.15:053][ 67]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_TestLevel
+[2022.04.07-06.51.15:053][ 67]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2022.04.07-06.51.15:054][ 67]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.07-06.51.15:054][ 67]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2022.04.07-06.51.15:055][ 67]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.07-06.51.15:075][ 67]LogNet: World NetDriver shutdown IpNetDriver_26 [GameNetDriver]
+[2022.04.07-06.51.15:075][ 67]LogNet: DestroyNamedNetDriver IpNetDriver_26 [GameNetDriver]
+[2022.04.07-06.51.15:076][ 67]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:49894, Name: IpConnection_27, Driver: GameNetDriver IpNetDriver_26, IsServer: YES, PC: BP_PingPongPlayerController_C_1, Owner: BP_PingPongPlayerController_C_1, UniqueId: NULL:LAPTOP-89S6SAPI-2B547BE147E7DA6C452F648303178748
+[2022.04.07-06.51.15:076][ 67]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:49894, Name: IpConnection_27, Driver: GameNetDriver IpNetDriver_26, IsServer: YES, PC: BP_PingPongPlayerController_C_1, Owner: BP_PingPongPlayerController_C_1, UniqueId: NULL:LAPTOP-89S6SAPI-2B547BE147E7DA6C452F648303178748, Channels: 14, Time: 2022.04.07-06.51.15
+[2022.04.07-06.51.15:076][ 67]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:49894, Name: IpConnection_27, Driver: GameNetDriver IpNetDriver_26, IsServer: YES, PC: BP_PingPongPlayerController_C_1, Owner: BP_PingPongPlayerController_C_1, UniqueId: NULL:LAPTOP-89S6SAPI-2B547BE147E7DA6C452F648303178748
+[2022.04.07-06.51.15:077][ 67]LogExit: GameNetDriver IpNetDriver_26 shut down
+[2022.04.07-06.51.15:083][ 67]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.04.07-06.51.15:102][ 67]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.07-06.51.15:208][ 67]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.07-06.51.15:209][ 67]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.07-06.51.15:211][ 67]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.07-06.51.15:226][ 67]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.07-06.51.15:232][ 67]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.07-06.51.15:275][ 67]LogUObjectHash: Compacting FUObjectHashTables data took  11.27ms
+[2022.04.07-06.51.15:355][ 68]LogPlayLevel: Display: Destroying online subsystem :Context_42
+[2022.04.07-06.51.15:355][ 68]LogPlayLevel: Display: Destroying online subsystem :Context_41
