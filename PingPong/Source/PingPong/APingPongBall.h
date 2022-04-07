@@ -5,8 +5,9 @@
 #include "GameFramework/Actor.h"
 #include "APingPongBall.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnChageScore, int32, Score, int32, GateId);
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FOnChageScore, int32, Score, int32, GateId, int32, BallPower);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnChangeBallPoewr,int32, BallPower); 
 
 UCLASS()
 class PINGPONG_API APingPongBall : public AActor
@@ -30,15 +31,20 @@ class PINGPONG_API APingPongBall : public AActor
 	
 	FVector StartingPosition;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball params")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gate params")
 	APingPongGoal * Gate1;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball params")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gate params")
 	APingPongGoal * Gate2;
 
+	////Task 3 * 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BallPower")
+	int32 BallPower = 0;
 
 	public:
 	UPROPERTY(BlueprintAssignable)
 	FOnChageScore OnChageScore;
+	UPROPERTY(BlueprintAssignable)
+	FOnChangeBallPoewr OnChangeBallPoewr;
 	////////Lesson 4 /////
 	
 	

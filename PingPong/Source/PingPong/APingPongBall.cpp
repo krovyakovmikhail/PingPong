@@ -100,15 +100,19 @@ if(!SetActorLocation(newLoc, true, &hitResult))
 		  if (Gate2)
 			{
 		  		GEngine->AddOnScreenDebugMessage(10, 1,FColor::Green, " GOAL!!!");
-				Gate2->Score =Gate2->Score + 1;
+
+		  		// Подсчет
+		  	
+		  		BallPower > 0 ? Gate2->Score = Gate2->Score + BallPower : Gate2->Score = Gate2->Score +1;
 
 		  		//Как только происходит изменение счета вызывается делегат, на который подписан эвент в виджете.
-		  		// передается Счет ворот и ИД 
-		  		OnChageScore.Broadcast(Gate2->Score, Gate2->id);
-		  	
+		  		// передается Счет ворот и ИД
+		  		
+		  		OnChageScore.Broadcast(Gate2->Score, Gate2->id, BallPower);
+				BallPower = 0;
+				OnChangeBallPoewr.Broadcast(BallPower);
 			}
-			UE_LOG(LogTemp, Error, TEXT("Score %d : %d"), Gate1->Score, Gate2->Score);
-			
+
 		}
 		
 		else if(gate->id == 2)
@@ -121,11 +125,17 @@ if(!SetActorLocation(newLoc, true, &hitResult))
 				GEngine->AddOnScreenDebugMessage(10, 1,FColor::Red, " GOAL!!!");
 				Gate1->Score =Gate1->Score + 1;
 
+				//
+				//Подсчет. 
+				
+				BallPower > 0 ? Gate2->Score = Gate2->Score + BallPower : Gate2->Score = Gate2->Score +1;
+				
 				//Как только происходит изменение счета вызывается делегат, на который подписан эвент в виджете.
 				// передается Счет ворот и ИД 
-				OnChageScore.Broadcast(Gate1->Score, Gate1->id);
+				OnChageScore.Broadcast(Gate1->Score, Gate1->id, BallPower);
+				BallPower = 0;
+				OnChangeBallPoewr.Broadcast(BallPower);
 			}
-			UE_LOG(LogTemp, Error, TEXT("Score %d : %d"), Gate1->Score, Gate2->Score);
 			
 		}
 
@@ -175,6 +185,9 @@ if(!SetActorLocation(newLoc, true, &hitResult))
         SetActorRotation(newRotation);
 	
         Multicast_HitEffect();
+
+		BallPower = BallPower + 1;
+		OnChangeBallPoewr.Broadcast(BallPower);
         }
 	}
 	
