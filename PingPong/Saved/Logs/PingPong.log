@@ -7515,3 +7515,377 @@ Script call stack:
 [2022.04.07-06.51.15:275][ 67]LogUObjectHash: Compacting FUObjectHashTables data took  11.27ms
 [2022.04.07-06.51.15:355][ 68]LogPlayLevel: Display: Destroying online subsystem :Context_42
 [2022.04.07-06.51.15:355][ 68]LogPlayLevel: Display: Destroying online subsystem :Context_41
+[2022.04.07-06.52.31:197][ 62]BlueprintLog: New page: Compile WBP_Score
+[2022.04.07-06.52.31:198][ 62]LogActor: Warning: SetReplicates called on non-initialized actor Default__SKEL_BP_PingPongPlayerPawn_C. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.31:273][ 62]LogUObjectHash: Compacting FUObjectHashTables data took   5.45ms
+[2022.04.07-06.52.31:614][ 70]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/WBP_Score" FILE="../../../../../../Users/Misha/UnrealProject/PingPong/PingPong/Content/UI/WBP_Score.uasset" SILENT=true
+[2022.04.07-06.52.31:624][ 70]LogSavePackage: Moving '../../../../../../Users/Misha/UnrealProject/PingPong/PingPong/Saved/WBP_ScoreBE148309423DFC9946457AABFA0F3B97.tmp' to '../../../../../../Users/Misha/UnrealProject/PingPong/PingPong/Content/UI/WBP_Score.uasset'
+[2022.04.07-06.52.31:647][ 70]AssetCheck: New page: Asset Save: WBP_Score
+[2022.04.07-06.52.31:647][ 70]LogContentValidation: Display: Validating WidgetBlueprint /Game/UI/WBP_Score.WBP_Score
+[2022.04.07-06.52.33:527][169]LogTemp: Repeating last play command: Selected Viewport
+[2022.04.07-06.52.33:534][169]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.04.07-06.52.33:534][169]PIE: New page: PIE session: TestLevel (7 апр. 2022 г., 12:52:33)
+[2022.04.07-06.52.33:534][169]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestLevel
+[2022.04.07-06.52.33:535][169]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongGoal2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.33:535][169]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongGoal_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.33:535][169]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongBall_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.33:536][169]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001990s)
+[2022.04.07-06.52.33:537][169]LogAIModule: Creating AISystem for world TestLevel
+[2022.04.07-06.52.33:538][169]LogPlayLevel: PIE: World Init took: (0.001455s)
+[2022.04.07-06.52.33:538][169]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestLevel.TestLevel to /Game/Maps/UEDPIE_0_TestLevel.TestLevel (0.003568s)
+[2022.04.07-06.52.33:594][169]LogUObjectHash: Compacting FUObjectHashTables data took   5.29ms
+[2022.04.07-06.52.33:595][169]LogAudio: Display: Creating Audio Device:                 Id: 30, Scope: Unique, Realtime: True
+[2022.04.07-06.52.33:595][169]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.04.07-06.52.33:595][169]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.04.07-06.52.33:595][169]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.04.07-06.52.33:595][169]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.04.07-06.52.33:595][169]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.04.07-06.52.33:595][169]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.04.07-06.52.33:595][169]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.04.07-06.52.33:595][169]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.04.07-06.52.33:596][169]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.04.07-06.52.33:596][169]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.04.07-06.52.33:596][169]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.04.07-06.52.33:596][169]LogAudioMixer: Display: Initializing audio mixer.
+[2022.04.07-06.52.33:598][169]LogAudioMixer: Display: 0: FrontLeft
+[2022.04.07-06.52.33:598][169]LogAudioMixer: Display: 1: FrontRight
+[2022.04.07-06.52.33:650][169]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2022.04.07-06.52.33:650][169]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.04.07-06.52.33:650][169]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.04.07-06.52.33:650][169]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.04.07-06.52.33:651][169]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.04.07-06.52.33:651][169]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.04.07-06.52.33:651][169]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.04.07-06.52.33:653][169]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.04.07-06.52.33:653][169]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.04.07-06.52.33:653][169]LogInit: FAudioDevice initialized.
+[2022.04.07-06.52.33:653][169]LogAudio: Display: Audio Device (ID: 30) registered with world 'TestLevel'.
+[2022.04.07-06.52.33:666][169]LogLoad: Game class is 'BP_PingPongGameModeBase_C'
+[2022.04.07-06.52.33:668][169]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 60) at 2022.04.07-09.52.33
+[2022.04.07-06.52.33:669][169]LogWorld: Bringing up level for play took: 0.000945
+[2022.04.07-06.52.33:669][169]LogOnline: OSS: Creating online subsystem instance for: :Context_43
+[2022.04.07-06.52.33:670][169]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerController_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.33:671][169]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerPawn_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.33:671][169]LogTemp: Warning: PingPongGameMode: Init player 1
+[2022.04.07-06.52.33:671][169]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlatform_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.33:671][169]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2022.04.07-06.52.33:671][169]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2022.04.07-06.52.33:672][169]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2022.04.07-06.52.33:672][169]LogNet: Created socket for bind address: 0.0.0.0 on port 17777
+[2022.04.07-06.52.33:672][169]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.04.07-06.52.33:672][169]LogNet: GameNetDriver IpNetDriver_28 IpNetDriver listening on port 17777
+[2022.04.07-06.52.33:673][169]PIE: Server logged in
+[2022.04.07-06.52.33:673][169]PIE: Play in editor total start time 0,14 seconds.
+[2022.04.07-06.52.33:675][169]LogAudio: Display: Creating Audio Device:                 Id: 31, Scope: Unique, Realtime: True
+[2022.04.07-06.52.33:675][169]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.04.07-06.52.33:675][169]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.04.07-06.52.33:675][169]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.04.07-06.52.33:675][169]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.04.07-06.52.33:675][169]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.04.07-06.52.33:675][169]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.04.07-06.52.33:675][169]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.04.07-06.52.33:675][169]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.04.07-06.52.33:676][169]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2022.04.07-06.52.33:676][169]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2022.04.07-06.52.33:676][169]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2022.04.07-06.52.33:676][169]LogAudioMixer: Display: Initializing audio mixer.
+[2022.04.07-06.52.33:678][169]LogAudioMixer: Display: 0: FrontLeft
+[2022.04.07-06.52.33:678][169]LogAudioMixer: Display: 1: FrontRight
+[2022.04.07-06.52.33:727][169]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2022.04.07-06.52.33:727][169]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.04.07-06.52.33:727][169]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.04.07-06.52.33:727][169]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.04.07-06.52.33:728][169]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.04.07-06.52.33:728][169]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.04.07-06.52.33:728][169]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.04.07-06.52.33:729][169]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.04.07-06.52.33:729][169]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.04.07-06.52.33:729][169]LogInit: FAudioDevice initialized.
+[2022.04.07-06.52.33:729][169]LogAudio: Display: Audio Device (ID: 31) registered with world 'Untitled'.
+[2022.04.07-06.52.33:771][169]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.07-06.52.33:772][169]LogNet: Browse: 127.0.0.1:17777/Game/Maps/TestLevel
+[2022.04.07-06.52.33:772][169]LogInit: WinSock: Socket queue. Rx: 32768 (config 32768) Tx: 32768 (config 32768)
+[2022.04.07-06.52.33:772][169]LogNet: Created socket for bind address: 0.0.0.0 on port 0
+[2022.04.07-06.52.33:773][169]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.04.07-06.52.33:773][169]LogNet: Game client on port 17777, rate 100000
+[2022.04.07-06.52.33:776][169]PIE: Client logged in
+[2022.04.07-06.52.33:782][169]PIE: Play in editor total start time 0,248 seconds.
+[2022.04.07-06.52.34:804][225]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:55574
+[2022.04.07-06.52.34:804][225]LogHandshake: SendConnectChallenge. Timestamp: 1.293118, Cookie: 046024132116242166089239057165041188226118104032035020030028
+[2022.04.07-06.52.34:805][225]LogHandshake: SendChallengeResponse. Timestamp: 1.293118, Cookie: 046024132116242166089239057165041188226118104032035020030028
+[2022.04.07-06.52.34:821][226]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:55574
+[2022.04.07-06.52.34:821][226]LogHandshake: SendChallengeAck. InCookie: 046024132116242166089239057165041188226118104032035020030028
+[2022.04.07-06.52.34:821][226]LogNet: Server accepting post-challenge connection from: 127.0.0.1:55574
+[2022.04.07-06.52.34:821][226]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2022.04.07-06.52.34:821][226]LogNet: NotifyAcceptedConnection: Name: TestLevel, TimeStamp: 04/07/22 09:52:34, [UNetConnection] RemoteAddr: 127.0.0.1:55574, Name: IpConnection_29, Driver: GameNetDriver IpNetDriver_28, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.04.07-06.52.34:821][226]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:55574, Name: IpConnection_29, Driver: GameNetDriver IpNetDriver_28, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.04.07-06.52.34:822][226]LogNet: UPendingNetGame::SendInitialJoin: Sending hello. [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_28, Driver: PendingNetDriver IpNetDriver_29, IsServer: NO, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2022.04.07-06.52.34:838][227]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Maps/UEDPIE_0_TestLevel.TestLevel: Accepted
+[2022.04.07-06.52.34:839][227]LogNet: Remote platform little endian=1
+[2022.04.07-06.52.34:839][227]LogNet: This platform little endian=1
+[2022.04.07-06.52.34:839][227]LogOnline: OSS: Creating online subsystem instance for: :Context_44
+[2022.04.07-06.52.34:854][228]LogNet: Login request: ?Name=LAPTOP-89S6SAPI-A0727DD442F0D9E64D41E6BC9AF81821 userId: NULL:LAPTOP-89S6SAPI-A0727DD442F0D9E64D41E6BC9AF81821 platform: NULL
+[2022.04.07-06.52.34:855][228]LogNet: Welcomed by server (Level: /Game/Maps/UEDPIE_0_TestLevel, Game: /Game/Blueprints/PingPong/BP_PingPongGameModeBase.BP_PingPongGameModeBase_C)
+[2022.04.07-06.52.34:856][228]LogLoad: LoadMap: 127.0.0.1:17777/Game/Maps/UEDPIE_0_TestLevel?game=/Game/Blueprints/PingPong/BP_PingPongGameModeBase.BP_PingPongGameModeBase_C
+[2022.04.07-06.52.34:856][228]LogWorld: BeginTearingDown for /Temp/Untitled_15
+[2022.04.07-06.52.34:856][228]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.04.07-06.52.34:856][228]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.07-06.52.34:902][228]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.07-06.52.34:906][228]LogUObjectHash: Compacting FUObjectHashTables data took   3.87ms
+[2022.04.07-06.52.34:907][228]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongGoal2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.34:907][228]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongGoal_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.34:907][228]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongBall_2. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.34:909][228]LogAudio: Display: Audio Device (ID: 31) registered with world 'TestLevel'.
+[2022.04.07-06.52.34:910][228]LogAIModule: Creating AISystem for world TestLevel
+[2022.04.07-06.52.34:911][228]LogWorld: Bringing World /Game/Maps/UEDPIE_1_TestLevel.TestLevel up for play (max tick rate 60) at 2022.04.07-09.52.34
+[2022.04.07-06.52.34:912][228]LogWorld: Bringing up level for play took: 0.000471
+[2022.04.07-06.52.34:912][228]LogLoad: Took 0.056133 seconds to LoadMap(/Game/Maps/UEDPIE_0_TestLevel)
+[2022.04.07-06.52.34:948][229]LogNet: Client netspeed is 100000
+[2022.04.07-06.52.34:948][229]LogNet: Join request: /Game/Maps/TestLevel?Name=LAPTOP-89S6SAPI-A0727DD442F0D9E64D41E6BC9AF81821?SplitscreenCount=1
+[2022.04.07-06.52.34:948][229]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerController_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.34:948][229]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2022.04.07-06.52.34:949][229]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerPawn_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.34:950][229]LogTemp: Warning: PingPongGameMode: Init player 2
+[2022.04.07-06.52.34:950][229]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlatform_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.34:950][229]LogNet: Join succeeded: LAPTOP-89S6SAPI-A072
+[2022.04.07-06.52.34:951][229]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerController_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.34:966][230]LogNetPackageMap: Warning: FNetGUIDCache::SupportsObject: WBP_Score_C /Engine/Transient.UnrealEdEngine_0:GameInstance_28.WBP_Score_C_1 NOT Supported.
+[2022.04.07-06.52.34:966][230]LogNetPackageMap: Warning: FNetGUIDCache::SupportsObject: WBP_Score_C /Engine/Transient.UnrealEdEngine_0:GameInstance_28.WBP_Score_C_0 NOT Supported.
+[2022.04.07-06.52.34:968][230]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerPawn_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.34:969][230]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlayerPawn_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.34:969][230]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlatform_C_0. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.34:970][230]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2022.04.07-06.52.34:984][231]LogActor: Warning: SetReplicates called on non-initialized actor BP_PingPongPlatform_C_1. Directly setting bReplicates is the correct procedure for pre-init actors.
+[2022.04.07-06.52.34:984][231]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2022.04.07-06.52.35:568][266]LogTemp: Warning: Ball BP_PingPongBall_2 Collided with Cube2_5
+[2022.04.07-06.52.37:401][376]LogTemp: Warning: Ball BP_PingPongBall_2 Collided with Cube2_5
+[2022.04.07-06.52.39:134][480]LogTemp: Warning: Ball BP_PingPongBall_2 Collided with BP_PingPongPlatform_C_0
+[2022.04.07-06.52.43:068][716]LogTemp: Error: Score 0 : 1
+[2022.04.07-06.52.45:301][850]LogTemp: Error: Score 0 : 2
+[2022.04.07-06.52.47:534][984]LogTemp: Error: Score 0 : 3
+[2022.04.07-06.52.49:778][115]LogTemp: Error: Score 0 : 4
+[2022.04.07-06.52.50:396][152]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.50:412][153]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.50:412][153]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.50:413][153]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.50:428][154]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.50:428][154]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.50:429][154]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.50:445][155]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.50:445][155]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.50:446][155]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.50:462][156]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.50:462][156]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.50:463][156]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.50:478][157]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.50:479][157]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.50:479][157]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.50:495][158]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.50:495][158]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.50:496][158]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.50:512][159]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.50:512][159]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.50:513][159]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.50:528][160]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.50:528][160]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.50:529][160]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.50:545][161]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.50:545][161]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.50:546][161]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.50:561][162]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.50:561][162]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.50:562][162]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.50:578][163]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.50:578][163]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.50:579][163]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.50:595][164]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.50:595][164]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.51:096][194]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.51:111][195]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.51:112][195]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.51:112][195]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.51:128][196]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.51:128][196]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.51:129][196]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.51:145][197]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.51:145][197]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.51:146][197]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.51:162][198]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.51:162][198]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.51:164][198]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.51:178][199]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.51:179][199]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.51:181][199]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.51:196][200]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.51:196][200]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.51:596][224]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.51:612][225]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.51:612][225]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.51:614][225]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.51:629][226]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.51:629][226]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.51:630][226]LogTemp: Warning: Ball BP_PingPongBall_2 Collided with BP_PingPongPlatform_C_1
+[2022.04.07-06.52.51:631][226]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.51:645][227]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.51:646][227]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:246][263]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:262][264]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:262][264]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:263][264]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:279][265]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:279][265]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:280][265]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:295][266]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:295][266]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:296][266]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:312][267]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:312][267]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:313][267]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:329][268]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:329][268]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:330][268]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:346][269]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:346][269]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:348][269]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:362][270]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:362][270]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:363][270]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:380][271]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:380][271]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:381][271]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:396][272]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:396][272]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:397][272]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:412][273]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:412][273]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:414][273]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:428][274]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:428][274]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:429][274]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:445][275]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:445][275]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:696][290]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:711][291]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:711][291]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:712][291]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:728][292]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:728][292]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:729][292]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:745][293]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:745][293]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:746][293]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:761][294]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:762][294]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:762][294]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:778][295]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:778][295]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:779][295]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:795][296]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:795][296]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.52:796][296]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.52:813][297]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.52:813][297]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:047][311]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:061][312]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:062][312]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:063][312]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:080][313]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:080][313]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:081][313]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:095][314]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:095][314]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:096][314]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:112][315]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:112][315]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:113][315]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:128][316]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:128][316]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:129][316]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:145][317]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:145][317]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:146][317]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:162][318]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:162][318]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:163][318]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:178][319]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:179][319]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:180][319]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:195][320]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:195][320]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:196][320]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:212][321]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:212][321]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:213][321]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:229][322]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:229][322]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:230][322]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:245][323]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:245][323]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:246][323]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:262][324]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:262][324]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:447][335]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:462][336]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:462][336]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:463][336]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:478][337]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:478][337]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:479][337]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:495][338]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:495][338]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:497][338]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:511][339]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:511][339]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:513][339]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:529][340]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:529][340]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:530][340]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:545][341]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:545][341]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.53:546][341]LogTemp: Warning: APingPongPlayerController::MoveRight
+[2022.04.07-06.52.53:562][342]LogTemp: Warning: APingPongPlayerController::Server_PlatformMoveRight_Implementation
+[2022.04.07-06.52.53:562][342]LogTemp: Warning: APingPongPlatform::Server_MoveRight_Implementation
+[2022.04.07-06.52.54:262][384]LogTemp: Warning: Ball BP_PingPongBall_2 Collided with Cube2_5
+[2022.04.07-06.52.54:395][392]LogTemp: Warning: Ball BP_PingPongBall_2 Collided with Cube2_5
+[2022.04.07-06.52.54:579][403]LogTemp: Warning: Ball BP_PingPongBall_2 Collided with Cube2_5
+[2022.04.07-06.52.54:928][424]LogTemp: Warning: Ball BP_PingPongBall_2 Collided with Cube2_5
+[2022.04.07-06.52.57:713][591]LogTemp: Error: Score 1 : 4
+[2022.04.07-06.52.59:698][710]LogTemp: Error: Score 2 : 4
+[2022.04.07-06.53.01:679][829]LogTemp: Error: Score 3 : 4
+[2022.04.07-06.53.03:662][948]LogTemp: Error: Score 4 : 4
+[2022.04.07-06.53.05:646][ 67]LogTemp: Error: Score 5 : 4
+[2022.04.07-06.53.07:629][186]LogTemp: Error: Score 6 : 4
+[2022.04.07-06.53.09:618][302]LogTemp: Error: Score 7 : 4
+[2022.04.07-06.53.10:112][327]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.07-06.53.10:112][327]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_1_TestLevel
+[2022.04.07-06.53.10:113][327]LogSlate: Window 'PingPong Preview [NetMode: Client 1]  (64-bit/Windows) ' being destroyed
+[2022.04.07-06.53.10:133][327]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2022.04.07-06.53.10:133][327]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.07-06.53.10:143][327]LogNet: World NetDriver shutdown IpNetDriver_29 [GameNetDriver]
+[2022.04.07-06.53.10:144][327]LogNet: DestroyNamedNetDriver IpNetDriver_29 [GameNetDriver]
+[2022.04.07-06.53.10:144][327]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_28, Driver: GameNetDriver IpNetDriver_29, IsServer: NO, PC: BP_PingPongPlayerController_C_0, Owner: BP_PingPongPlayerController_C_0, UniqueId: NULL:LAPTOP-89S6SAPI-A0727DD442F0D9E64D41E6BC9AF81821, Channels: 15, Time: 2022.04.07-06.53.10
+[2022.04.07-06.53.10:144][327]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:17777, Name: IpConnection_28, Driver: GameNetDriver IpNetDriver_29, IsServer: NO, PC: BP_PingPongPlayerController_C_0, Owner: BP_PingPongPlayerController_C_0, UniqueId: NULL:LAPTOP-89S6SAPI-A0727DD442F0D9E64D41E6BC9AF81821
+[2022.04.07-06.53.10:144][327]LogExit: GameNetDriver IpNetDriver_29 shut down
+[2022.04.07-06.53.10:147][327]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_TestLevel
+[2022.04.07-06.53.10:148][327]LogOnlineSession: Warning: OSS: No game present to leave for session (GameSession)
+[2022.04.07-06.53.10:148][327]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.07-06.53.10:149][327]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2022.04.07-06.53.10:149][327]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.07-06.53.10:157][327]LogNet: World NetDriver shutdown IpNetDriver_28 [GameNetDriver]
+[2022.04.07-06.53.10:157][327]LogNet: DestroyNamedNetDriver IpNetDriver_28 [GameNetDriver]
+[2022.04.07-06.53.10:158][327]LogNet: UNetConnection::Cleanup: Closing open connection. [UNetConnection] RemoteAddr: 127.0.0.1:55574, Name: IpConnection_29, Driver: GameNetDriver IpNetDriver_28, IsServer: YES, PC: BP_PingPongPlayerController_C_1, Owner: BP_PingPongPlayerController_C_1, UniqueId: NULL:LAPTOP-89S6SAPI-A0727DD442F0D9E64D41E6BC9AF81821
+[2022.04.07-06.53.10:158][327]LogNet: UNetConnection::Close: [UNetConnection] RemoteAddr: 127.0.0.1:55574, Name: IpConnection_29, Driver: GameNetDriver IpNetDriver_28, IsServer: YES, PC: BP_PingPongPlayerController_C_1, Owner: BP_PingPongPlayerController_C_1, UniqueId: NULL:LAPTOP-89S6SAPI-A0727DD442F0D9E64D41E6BC9AF81821, Channels: 15, Time: 2022.04.07-06.53.10
+[2022.04.07-06.53.10:158][327]LogNet: UChannel::Close: Sending CloseBunch. ChIndex == 0. Name: [UChannel] ChIndex: 0, Closing: 0 [UNetConnection] RemoteAddr: 127.0.0.1:55574, Name: IpConnection_29, Driver: GameNetDriver IpNetDriver_28, IsServer: YES, PC: BP_PingPongPlayerController_C_1, Owner: BP_PingPongPlayerController_C_1, UniqueId: NULL:LAPTOP-89S6SAPI-A0727DD442F0D9E64D41E6BC9AF81821
+[2022.04.07-06.53.10:159][327]LogExit: GameNetDriver IpNetDriver_28 shut down
+[2022.04.07-06.53.10:160][327]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.04.07-06.53.10:170][327]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.04.07-06.53.10:237][327]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.04.07-06.53.10:238][327]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.07-06.53.10:240][327]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.07-06.53.10:245][327]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.07-06.53.10:247][327]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.04.07-06.53.10:254][327]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.04.07-06.53.10:266][327]LogUObjectHash: Compacting FUObjectHashTables data took   8.49ms
+[2022.04.07-06.53.10:302][328]LogPlayLevel: Display: Destroying online subsystem :Context_44
+[2022.04.07-06.53.10:302][328]LogPlayLevel: Display: Destroying online subsystem :Context_43
+[2022.04.07-06.53.11:527][390]LogUObjectHash: Compacting FUObjectHashTables data took   4.49ms
