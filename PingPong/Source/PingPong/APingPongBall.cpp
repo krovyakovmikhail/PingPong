@@ -2,6 +2,10 @@
 #include "PingPongGoal.h"
 #include "DrawDebugHelpers.h"
 #include "PingPongGameModeBase.h"
+#include "Engine/AssetManager.h"
+#include "ParticleHelper.h"
+#include "Particles/ParticleSystem.h"
+#include "Engine/StreamableManager.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Net/UnrealNetwork.h"
@@ -22,22 +26,69 @@ APingPongBall::APingPongBall()
 	BodyMesh->SetupAttachment(RootComponent);
 	BodyMesh->SetIsReplicated(true);
 	
-	
 	SetReplicates(true);
 	SetReplicateMovement(true);
+
+	
 }
 // Called when the game starts or when spawned
 void APingPongBall::BeginPlay()
 {	
 	Super::BeginPlay();
 
-	////////////////////////////// Lesson 4 //////////////////////////////////////////////
+	////////////////////////////// Lesson 4 ++//////////////////////////////
 	
 	StartingPosition = GetActorLocation();
+	
+	////////////////////////////// Lesson 4 --//////////////////////////////
 
 	
-	////////////////////////////// Lesson 4 //////////////////////////////////////////////
+	//////////Lesson 6 ++//////////
+	
+	BodyMesh->SetStaticMesh(LoadBodyMesh());
+
+	
+	// установка материала в меше после его загрузки
+	BodyMesh->SetMaterial(0, LoadBodyMaterial());
+
+
+	
+	//UParticleSystem* HitEffect;
+	//ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'
+	
+	HitEffect = LoadObject<UParticleSystem>(NULL,	TEXT("/Game/StarterContent/Particles/P_Explosion.P_Explosion"), NULL,	LOAD_None, NULL);
+	
+	
+	
+	/////////Lesson 6 --//////////
 }
+
+UStaticMesh* APingPongBall::LoadBodyMesh()
+{
+	if (BodyMeshRef.IsPending())
+    {
+    const FSoftObjectPath& AssetRef = BodyMeshRef.ToStringReference();
+    FStreamableManager& StreamableManager =    UAssetManager::Get().GetStreamableManager();
+    BodyMeshRef = Cast<UStaticMesh>(StreamableManager.LoadSynchronous(AssetRef));
+    }
+    return BodyMeshRef.Get();
+
+}
+
+UMaterialInterface* APingPongBall::LoadBodyMaterial()
+{
+
+	if (BodyMeshMaterialRef.IsPending())
+	{
+		const FSoftObjectPath& AssetRef = BodyMeshMaterialRef.ToStringReference();
+		
+		FStreamableManager& StreamableManager = UAssetManager::Get().GetStreamableManager();
+		
+		BodyMeshMaterialRef = Cast<UMaterialInterface>(StreamableManager.LoadSynchronous(AssetRef));
+	}
+	return BodyMeshMaterialRef.Get();
+}
+
 // Called every frame
 void APingPongBall::Tick(float DeltaTime)
 {

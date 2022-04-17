@@ -2,6 +2,7 @@
 #include "CoreMinimal.h"
 #include "PingPongGoal.h"
 #include "Components/SphereComponent.h"
+
 #include "GameFramework/Actor.h"
 #include "APingPongBall.generated.h"
 
@@ -18,11 +19,25 @@ class PINGPONG_API APingPongBall : public AActor
 	USphereComponent* BodyCollision;
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadWrite, Category = "Components")
 	UStaticMeshComponent* BodyMesh;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball params")
+	UParticleSystem* HitEffect;
+
+	//////////Lesson 6 ++//////////
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+    TSoftObjectPtr<UStaticMesh> BodyMeshRef;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+	TSoftObjectPtr<UMaterialInterface> BodyMeshMaterialRef;
+
+	
+
+	//////////Lesson 6 --//////////
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball params")
 	float MoveSpeed = 100;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ball params")
-	UParticleSystem* HitEffect;
+	
+	
+	
 	UPROPERTY(Replicated)
 	bool IsMoving = true;
 	float coordinatZ;
@@ -62,8 +77,17 @@ class PINGPONG_API APingPongBall : public AActor
 	void Server_StartMove();
 	UFUNCTION(Server, Reliable, WithValidation)
 	void Server_StopMove();
+	
 	UFUNCTION(NetMulticast, Unreliable)
 	void Multicast_HitEffect();
+	
+	//////////Lesson 6 ++//////////
+
+	UStaticMesh* LoadBodyMesh();
+
+	UMaterialInterface* LoadBodyMaterial();
+	
+	//////////Lesson 6 --//////////
 	
 	public:
 	// Called every frame
