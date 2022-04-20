@@ -3,6 +3,8 @@
 
 #include "APingPongPlatform.h"
 
+#include "Engine/AssetManager.h"
+
 APingPongPlatform::APingPongPlatform()
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -19,12 +21,47 @@ APingPongPlatform::APingPongPlatform()
 void APingPongPlatform::BeginPlay()
 {
 	Super::BeginPlay();
+
+	LoadBodyMesh();
 }
 // Called every frame
 void APingPongPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
+
+
+
+///////////////////// Lesson 7 ++ //////////////////////////////
+
+void APingPongPlatform::LoadBodyMesh()
+{
+	FStreamableDelegate LoadMeshDelegate;
+	
+	LoadMeshDelegate.BindUObject(this, &APingPongPlatform::OnBodyMeshLoaded);
+	
+	UAssetManager& assetManager = UAssetManager::Get();
+	
+	FStreamableManager& streamableManager =	assetManager.GetStreamableManager();
+	
+	AssetHandle = streamableManager.RequestAsyncLoad(BodyMeshRef.ToStringReference(),LoadMeshDelegate);
+}
+
+void APingPongPlatform::OnBodyMeshLoaded()
+{
+	UStaticMesh * loadedMesh =  Cast<UStaticMesh>(AssetHandle.Get()->GetLoadedAsset());
+	
+    if(loadedMesh)   
+    {
+    BodyMesh->SetStaticMesh(loadedMesh);
+    }
+
+}
+///////////////////// Lesson 7 --//////////////////////////////
+
+
+
+
 bool APingPongPlatform::Server_MoveRight_Validate(float AxisValue)
 {
 	return true;

@@ -4,6 +4,7 @@
 #include "CoreMinimal.h"
 
 #include "Components/BoxComponent.h"
+#include "Engine/StreamableManager.h"
 #include "GameFramework/Actor.h"
 #include "APingPongPlatform.generated.h"
 
@@ -19,6 +20,16 @@ class PINGPONG_API APingPongPlatform : public AActor
 	UStaticMeshComponent* BodyMesh;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float MoveSpeed = 100;
+
+	///////////////////// Lesson 7 ++ //////////////////////////////
+	TSharedPtr<FStreamableHandle> AssetHandle;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+		TSoftObjectPtr<UStaticMesh> BodyMeshRef;
+	
+	/////////////////////// Lesson 7 -- ////////////////////////////
+
+	
 	public:
 	// Sets default values for this actor's properties
 	APingPongPlatform();
@@ -30,4 +41,9 @@ class PINGPONG_API APingPongPlatform : public AActor
 	virtual void Tick(float DeltaTime) override;
 	UFUNCTION(Server, Reliable, WithValidation)
 	void Server_MoveRight(float AxisValue);
+	
+	///////////////////// Lesson 7 ++ //////////////////////////////
+	void LoadBodyMesh();
+	void OnBodyMeshLoaded();
+	/////////////////////// Lesson 7 -- ////////////////////////////
 };
