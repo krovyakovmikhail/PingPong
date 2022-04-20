@@ -23,6 +23,7 @@ APingPongBall::APingPongBall()
 	SetRootComponent(BodyCollision);
 	
 	BodyMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Ball Body Mesh"));
+	
 	BodyMesh->SetupAttachment(RootComponent);
 	BodyMesh->SetIsReplicated(true);
 	
@@ -56,11 +57,15 @@ void APingPongBall::BeginPlay()
 	//UParticleSystem* HitEffect;
 	//ParticleSystem'/Game/StarterContent/Particles/P_Explosion.P_Explosion'
 	
-	HitEffect = LoadObject<UParticleSystem>(NULL,	TEXT("/Game/StarterContent/Particles/P_Explosion.P_Explosion"), NULL,	LOAD_None, NULL);
+	//HitEffect = LoadObject<UParticleSystem>(NULL,	TEXT("/Game/StarterContent/Particles/P_Explosion.P_Explosion"), NULL,	LOAD_None, NULL);
 	
 	
 	
 	/////////Lesson 6 --//////////
+	
+	//////// Lesson 7 ++ ////////
+	LoadHitEffect();
+	//////// Lesson 7 -- ////////
 }
 
 UStaticMesh* APingPongBall::LoadBodyMesh()
@@ -88,6 +93,36 @@ UMaterialInterface* APingPongBall::LoadBodyMaterial()
 	}
 	return BodyMeshMaterialRef.Get();
 }
+
+///////////////////// Lesson 7 ++ //////////////////////////////
+void APingPongBall::LoadHitEffect()
+{
+	FStreamableDelegate LoadEffectDelegate;
+	
+	LoadEffectDelegate.BindUObject(this, &APingPongBall::OnHitEffectLoaded);
+	
+	UAssetManager& assetManager = UAssetManager::Get();
+	
+	FStreamableManager& streamableManager =	assetManager.GetStreamableManager();
+	
+	AssetHandle = streamableManager.RequestAsyncLoad(HitEffectRef.ToStringReference(),LoadEffectDelegate);
+}
+
+void APingPongBall::OnHitEffectLoaded()
+{
+	GEngine->AddOnScreenDebugMessage(10, 3,FColor::Red, "Load Effect");
+	
+	UParticleSystem * loadedEffect=  Cast<UParticleSystem>(AssetHandle.Get()->GetLoadedAsset());
+	
+	if(loadedEffect)   
+	{
+		HitEffect = loadedEffect;
+	}
+
+}
+	
+
+///////////////////// Lesson 7 -- //////////////////////////////
 
 // Called every frame
 void APingPongBall::Tick(float DeltaTime)

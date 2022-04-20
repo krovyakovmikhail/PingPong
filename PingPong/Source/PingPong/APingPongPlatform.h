@@ -44,6 +44,6 @@ class PINGPONG_API APingPongPlatform : public AActor
 	
 	///////////////////// Lesson 7 ++ //////////////////////////////
 	void LoadBodyMesh();
-	void OnBodyMeshLoaded();
+	void OnBodyMeshLoaded();	
 	/////////////////////// Lesson 7 -- ////////////////////////////
 };
